@@ -1,0 +1,95 @@
+body {
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #222;
+    background-image: url("./pexels-guillaume-meurice-1591447.jpg");
+    background-size: cover;
+
+   
+}
+
+.WeatherBox {
+    background: #000000d0;
+    color: white;
+    /* opacity: 0.6; */
+    padding: 2em;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 420px;
+    margin: 1em;
+   
+
+}
+
+.searchBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+button{
+    margin: .5em;
+    border-radius: 50%;
+    border: none;
+    height: 2.5em;
+    width: 2.5em;
+    outline: none;
+    /* padding: 0.5em; */
+    background-color: #4a4747d0;
+    color: white; 
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+button:hover{
+    background-color: #a6a4a4d0;
+
+}
+
+.search-bar{
+    border:none !important;
+    outline: none;
+    padding: 0.4em 1em;
+    border-radius: 20px;
+    background-color: #4a4747d0; 
+    color: white;
+    font-family: inherit;
+    font-size: 100%;
+    width: calc(100% - 100px);
+
+}
+
+.temp{
+    margin: 0;
+    margin-bottom: 0.4em;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.description{
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+
+.Weather.loading{
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+}
+
+.Weather.loading:after{
+    visibility: visible;
+    content: "Loading...";
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
